@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wally's Café | Las Piedras, PR</title>
+        <meta charset="utf-8"/>
+        
+        <style>
+            
+            body {
+                background-color:#eee;
+                font-family: Times New Roman;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                width: 800px;
+            }
+
+            li {
+                float: left;
+                border-right:1px solid #bbb;
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            .active {
+                background-color: #4CAF50;
+            }
+            
+            #container {
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+                width: 800px;
+                box-shadow: 2px 3px 5px 5px #999;
+                text-align: center;
+            }
+            
+            #content {
+                padding: 10px;
+                float: right;
+                font-family: fantasy;
+                text-shadow: -2px 2px 2px #999;
+                width: 50%;
+            }
+            
+            #content table tr td {
+                height: 50px;
+                width: 200px;
+            }
+            
+            h2 {
+                text-align: center;
+                font-family: cursive;
+                text-shadow: -2px 2px 2px #999;
+            }
+            
+            #nav {
+                width: 50%;
+            }
+            
+            #nav img {
+                box-shadow: 5px 5px 3px 1px #999;
+                float: left;
+                
+            }
+            
+            #photo1 {
+                height: 45%;
+                width: 80%;
+                padding-left: 10px;
+            }
+            
+            #nav table {
+                padding-left: 10px;
+            }
+            
+            #nav table tr td {
+                width: 105px;
+                height: 105px;
+            }
+            
+            #nav table tr td img {
+                width: 100px;
+                height: 100px
+            }
+            
+            #footer {
+                clear: both;
+                text-align: right;
+                background-color: palegreen;
+            }
+            
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">Menú</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
+                <li style="float:right"><a href="#about">Sobre Nosotros</a></li>
+            </ul>
+            
+            <h2>Wally's Café</h2>
+            <div id="content">
+                <h3>¡Bienvenidos a Wally's Café!</h3>
+                
+                <p>Conocido por su gran ambiente familiar, deliciosos cafés, desayunos y frituras, Wally's Café es la mejor opción para comer en el pueblo de  Las Piedras. No importa si viene para estudiar, para negocios o por placer, el ambiente amistoso y cariñoso de este lugar hace que este sea el lugar de reunión perfecto.</p>
+                
+                <h3>Horas de Trabajo:</h3>
+                
+                <table>
+                    <tr>
+                        <td>Lunes - Viernes</td>
+                        <td>6:00am - 2:00pm</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sabado</td>
+                        <td>6:00am - 12:00pm</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="nav">
+                
+                <img id="photo1" src="cafe.jpeg">
+                
+                <br/>
+                
+                <table>
+                    <tr>
+                        <td><img src="desayuno.jpeg"></td>
+                        <td><img src="desayuno2.jpeg"></td>
+                        <td><img src="fritura.jpeg"</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="desayuno3.jpeg"></td>
+                        <td><img src="postres.jpeg"</td>
+                        <td><img src="frituras2.jpeg"</td>
+                    </tr>
+                </table>
+            </div>
+            
+        <div id="footer"></div>
+        </div>
+        
+    </body>
+    
+</html>
