@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wally's Café | Las Piedras, PR</title>
+        <meta charset="utf-8"/>
+        
+        <link rel = "stylesheet" type="text/css" href="wallyscafe.css"/>
+        
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li style="float:right"><a href="#about">Sobre Nosotros</a></li>
+            </ul>
+            
+            <h2>Wally's Café</h2>
+            
+            <h3>Contácto:</h3>
+            
+            <p>787-562-3694</p>
+        
+            <h3>Localización:</h3>
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var uluru = {lat: 18.183230, lng: -65.871612};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiqR615zZI3c0wjBvKo3gL9ZnRgVGDROY&callback=initMap">
+            </script>
+            
+            
+        </div>
+        
+    </body>
+    
+</html>
